@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "project-dm1701-25"
+version = "0.4.0"
+description = "Project DM1701-25 FM/DMR CPS with experimental P25 receive firmware controls"
+requires-python = ">=3.10"
+dependencies = ["PyYAML>=6.0.2,<7", "customtkinter>=5.2.2,<6", "pyserial>=3.5,<4", "pyusb>=1.2.1,<2", "libusb-package>=1.0.26", "certifi>=2024.2.2"]
+
+[project.gui-scripts]
+project-dm1701-25 = "project_dm1701_25.app:main"
+dm1701-studio-legacy = "dm1701.app:main"
+
+[tool.setuptools.packages.find]
+include = ["dm1701*", "project_dm1701_25*"]

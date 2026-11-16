@@ -1,0 +1,4 @@
+#ifndef DM1701_ARM_CSTDLIB
+#define DM1701_ARM_CSTDLIB
+extern "C" void abort(void);
+#endif

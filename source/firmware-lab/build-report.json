@@ -1,0 +1,22 @@
+{
+  "build": "capture-lab-0.1",
+  "base_commit": "947c1398fe85f2c0314f7749888e627270b23679",
+  "bytes": 535924,
+  "sha256": "1756b75934f977c114988f4f0b07961aa7185c6acf889cc8a02771c190515bc5",
+  "stack_pointer": "0x2001fffc",
+  "reset_vector": "0x80744a1",
+  "image_base": "0x0800C000",
+  "hardware_tested": false,
+  "p25_voice_rx_tx": false,
+  "memory": {
+    "flash_used": 535924,
+    "flash_capacity": 737280,
+    "ram_used": 117600,
+    "ram_capacity": 131068,
+    "ccm_used": 64872,
+    "ccm_capacity": 65536
+  },
+  "compiler": "arm-none-eabi-gcc 14.2.1",
+  "configuration": "BOARD=dm1701 CONFIG_AUDIO_PROBE=y",
+  "manifest_validated": true
+}

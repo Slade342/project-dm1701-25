@@ -1,0 +1,50 @@
+#!/bin/bash
+set -u
+
+PRODUCT="Project DM1701-25"
+SCRIPT_DIR="$(cd -- "$(dirname -- "$0")" && pwd)"
+RESOURCES="$(cd -- "$SCRIPT_DIR/../Resources" && pwd)"
+APP_HOME="$HOME/Library/Application Support/$PRODUCT"
+SOURCE="$APP_HOME/app"
+VENV="$APP_HOME/.venv"
+VERSION="0.4.0"
+
+fail() {
+    /usr/bin/osascript -e "display dialog \"$1\" buttons {\"OK\"} default button \"OK\" with title \"Project DM1701-25\"" >/dev/null 2>&1 || true
+    exit 1
+}
+
+mkdir -p "$APP_HOME"
+if [ ! -f "$APP_HOME/version" ] || [ "$(cat "$APP_HOME/version" 2>/dev/null || true)" != "$VERSION" ]; then
+    TEMP_SOURCE="$APP_HOME/app.new"
+    rm -rf "$TEMP_SOURCE"
+    /usr/bin/ditto "$RESOURCES/app" "$TEMP_SOURCE" || fail "Project DM1701-25 could not prepare its application files."
+    rm -rf "$SOURCE"
+    mv "$TEMP_SOURCE" "$SOURCE"
+    printf '%s' "$VERSION" > "$APP_HOME/version"
+fi
+
+PYTHON=""
+for candidate in "${PROJECT_DM1701_PYTHON:-}" "$(command -v python3 2>/dev/null || true)" "/opt/homebrew/bin/python3" "/usr/local/bin/python3" "/usr/bin/python3"; do
+    [ -n "$candidate" ] || continue
+    [ -x "$candidate" ] || continue
+    if "$candidate" -c 'import sys, tkinter; assert sys.version_info >= (3,10)' >/dev/null 2>&1; then
+        PYTHON="$candidate"
+        break
+    fi
+done
+
+if [ -z "$PYTHON" ]; then
+    fail "Install Python 3.10 or newer from python.org (the macOS installer includes Tk), then open Project-DM1701-25.app again."
+fi
+
+if [ ! -x "$VENV/bin/python" ]; then
+    /usr/bin/osascript -e 'display notification "Preparing the Project DM1701-25 Python runtime…" with title "Project DM1701-25"' >/dev/null 2>&1 || true
+    "$PYTHON" -m venv "$VENV" || fail "Could not create the private Project DM1701-25 Python environment."
+    "$VENV/bin/python" -m pip install --disable-pip-version-check --timeout 30 --retries 2 -r "$SOURCE/requirements.txt" || fail "Python dependencies could not be installed. Check your internet connection and reopen the app."
+fi
+
+cd "$SOURCE"
+export PYTHONPATH="$SOURCE${PYTHONPATH:+:$PYTHONPATH}"
+exec "$VENV/bin/python" -m project_dm1701_25
+

@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+cd -- "$(dirname -- "$0")/../../.."
+if [ ! -x .venv/bin/python ]; then
+    /usr/bin/osascript -e 'display dialog "Run Setup.command in the DM-1701 Studio folder first. Keep this app together with the rest of that folder." buttons {"OK"} default button "OK"'
+    exit 1
+fi
+exec .venv/bin/python -m dm1701 >> .studio.log 2>&1

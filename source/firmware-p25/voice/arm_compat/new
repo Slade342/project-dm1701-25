@@ -1,0 +1,6 @@
+#ifndef DM1701_ARM_NEW
+#define DM1701_ARM_NEW
+typedef unsigned int size_t;
+void *operator new(size_t, void *) noexcept;
+void operator delete(void *, void *) noexcept;
+#endif

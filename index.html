@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Project DM1701-25 — downloads</title>
+  <style>
+    :root { color-scheme: dark; --bg:#0b111b; --panel:#111d2b; --line:#2b4159; --text:#eef5fb; --muted:#a3b6c9; --cyan:#56c7f0; }
+    * { box-sizing:border-box; } body { margin:0; min-height:100vh; background:radial-gradient(circle at 82% 0,#173650 0,#0b111b 43%); color:var(--text); font:16px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif; }
+    main { max-width:780px; margin:0 auto; padding:clamp(28px,7vw,80px) 22px; }
+    .eyebrow { color:var(--cyan); font-weight:700; letter-spacing:.14em; text-transform:uppercase; font-size:.78rem; }
+    h1 { margin:.45rem 0 .6rem; font-size:clamp(2rem,6vw,4rem); line-height:1.05; letter-spacing:-.04em; }
+    .lead { color:var(--muted); max-width:650px; font-size:1.08rem; }
+    .card { margin-top:30px; padding:24px; background:color-mix(in srgb,var(--panel) 91%,transparent); border:1px solid var(--line); border-radius:18px; box-shadow:0 18px 45px #0005; }
+    .button { display:inline-block; margin:8px 8px 0 0; padding:13px 18px; border-radius:11px; background:var(--cyan); color:#07131c; font-weight:800; text-decoration:none; }
+    .button.secondary { background:transparent; border:1px solid var(--line); color:var(--text); }
+    .meta { color:var(--muted); font-size:.9rem; margin-top:18px; }
+    code { color:#c8e9f5; } details { margin-top:22px; color:var(--muted); } summary { color:var(--text); cursor:pointer; font-weight:650; }
+    li { margin:.45rem 0; }
+    .warning { margin-top:20px; padding:13px 15px; border-left:3px solid #f2b35f; background:#2a2114; color:#f5d4a3; border-radius:8px; }
+  </style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">Project DM1701-25 · release 0.4</div>
+  <h1>Project DM1701‑25</h1>
+  <p class="lead">A standalone CPS for the Baofeng DM‑1701 / Retevis RT84: FM, DMR, and an experimental P25 Phase 1 receive workflow.</p>
+  <section class="card">
+    <h2>Install the application</h2>
+    <p>Use the single setup file. It creates <strong>Project DM1701-25</strong> on your desktop and opens the CPS directly—no folder of runners to click. If Python 3.12 x64 with Tk is not already available, setup downloads the official signed runtime automatically.</p>
+    <a class="button" href="downloads/Project-DM1701-25-Setup-0.4-Web.exe" download>Download Windows setup (2 MB)</a>
+    <a class="button secondary" href="downloads/Project-DM1701-25-Setup-0.4-Web.zip" download>ZIP fallback</a>
+    <p class="meta">Windows 10/11 · 64-bit · installer SHA-256: <code>e24a63a30a8b3a74bafdb070f2714fd17bdfee0c6f4405f9319d5ce84bff26ea</code></p>
+    <h2>macOS app</h2>
+    <p>Download the single app bundle, unzip it, and drag <strong>Project-DM1701-25.app</strong> to Applications. The first launch creates its private runtime automatically and opens the CPS directly—no terminal command or folder runner. macOS needs Python 3.10+ with Tk (the official python.org installer includes it).</p>
+    <a class="button secondary" href="downloads/Project-DM1701-25-macOS.zip" download>Download macOS app (ZIP)</a>
+    <p class="meta">macOS 10.15+ · Apple silicon and Intel · ZIP SHA-256: <code>085e48d6b7fff0deac84a73369c5420e3d811dc4ab9c7cc775721275e987e0d7</code></p>
+    <div class="warning"><strong>macOS first launch:</strong> this development bundle is not code-signed or notarized. If Gatekeeper blocks it, Control-click the app, choose <em>Open</em>, then confirm. The experimental P25 image and radio-risk warning below apply to both platforms.</div>
+    <div class="warning"><strong>P25 status:</strong> the package includes a real experimental flashable receiver image with P25 FEC/IMBE and speaker output linked. RF capture, first boot, real-time timing, and speaker output are not validated on a physical radio, so reception is not guaranteed. The image is RX-only.</div>
+    <details><summary>Optional source and firmware files</summary>
+      <ul>
+        <li><a href="downloads/Project-DM1701-25-P25-EXPERIMENTAL.bin">Project DM1701-25 P25 firmware image (BIN)</a> <small>advanced; make a full backup first</small></li>
+        <li><a href="downloads/Project-DM1701-25-P25-EXPERIMENTAL.json">Firmware manifest and hash</a></li>
+        <li><a href="downloads/Project-DM1701-25-Source-0.4.zip">Project DM1701-25 CPS source (ZIP)</a></li>
+        <li><a href="downloads/Project-DM1701-25-Firmware-Source-0.4.tar.xz">Project DM1701-25 firmware source (tar.xz)</a></li>
+        <li><a href="downloads/SHA256SUMS.txt">SHA-256 checksums</a></li>
+      </ul>
+    </details>
+  </section>
+</main>
+</body>
+</html>

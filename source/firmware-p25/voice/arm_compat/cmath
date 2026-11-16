@@ -1,0 +1,3 @@
+#ifndef DM1701_ARM_CMATH
+#define DM1701_ARM_CMATH
+#endif

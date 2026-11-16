@@ -1,0 +1,3 @@
+DM-1701 Studio Windows test package
+Build: P25 channel editor / one-click launcher
+Use: double-click DM1701-Setup.cmd

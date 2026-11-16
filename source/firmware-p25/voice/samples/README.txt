@@ -1,0 +1,1 @@
+Synthetic speech generated with FFmpeg/libflite voice slt. Encoded using the supplied IMBE encoder and P25 call assembler. This is a desktop known-answer playback test, not a radio recording. Expected phrase: This is a P twenty five speech decoder test. The decoder is running on the computer.

@@ -1,0 +1,247 @@
+{
+  "format": "rfoundry-release/1",
+  "board": "dm1701",
+  "board_name": "Baofeng DM-1701",
+  "version": "project-dm1701-25-0.4-experimental",
+  "git": "947c1398",
+  "git_full": "947c1398fe85f2c0314f7749888e627270b23679",
+  "image": {
+    "file": "PROJECT-DM1701-25-P25-EXPERIMENTAL.bin",
+    "size": 339092,
+    "sha256": "b9785f4dedee64be1af547cad0598118884ab5eddc32c059a221fe28e29614d0"
+  },
+  "ranges": [
+    {
+      "addr": "0x0800C000",
+      "size": 339092
+    }
+  ],
+  "sectors": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "codec": {
+    "included": false,
+    "profile": "dm1701-v0206-csv-s11",
+    "sectors": [
+      10,
+      11
+    ],
+    "windows": [
+      {
+        "addr": "0x080E3A74",
+        "size": 66076
+      },
+      {
+        "addr": "0x080D19F0",
+        "size": 73858
+      },
+      {
+        "addr": "0x080FFF80",
+        "size": 128
+      },
+      {
+        "addr": "0x080E3A34",
+        "size": 66076
+      },
+      {
+        "addr": "0x080D19B0",
+        "size": 73858
+      },
+      {
+        "addr": "0x080E6828",
+        "size": 66048
+      },
+      {
+        "addr": "0x080D4794",
+        "size": 73874
+      },
+      {
+        "addr": "0x080E67E8",
+        "size": 66048
+      },
+      {
+        "addr": "0x080D4754",
+        "size": 73874
+      },
+      {
+        "addr": "0x080E2C98",
+        "size": 61972
+      },
+      {
+        "addr": "0x080D02BC",
+        "size": 69686
+      },
+      {
+        "addr": "0x080E2434",
+        "size": 62008
+      },
+      {
+        "addr": "0x080D0A7C",
+        "size": 69814
+      },
+      {
+        "addr": "0x080E2E38",
+        "size": 62004
+      },
+      {
+        "addr": "0x080D0820",
+        "size": 69702
+      },
+      {
+        "addr": "0x080E3630",
+        "size": 61948
+      },
+      {
+        "addr": "0x080D0FE0",
+        "size": 69830
+      },
+      {
+        "addr": "0x080E2B18",
+        "size": 61972
+      },
+      {
+        "addr": "0x080D013C",
+        "size": 69606
+      },
+      {
+        "addr": "0x080E20B8",
+        "size": 62004
+      },
+      {
+        "addr": "0x080D06FC",
+        "size": 69734
+      },
+      {
+        "addr": "0x080E2C9C",
+        "size": 61968
+      },
+      {
+        "addr": "0x080D0660",
+        "size": 69622
+      },
+      {
+        "addr": "0x080E2280",
+        "size": 61996
+      },
+      {
+        "addr": "0x080D0C60",
+        "size": 69750
+      },
+      {
+        "addr": "0x080E2C78",
+        "size": 62002
+      },
+      {
+        "addr": "0x080D02BC",
+        "size": 69606
+      },
+      {
+        "addr": "0x080E23CC",
+        "size": 61982
+      },
+      {
+        "addr": "0x080D09FC",
+        "size": 69734
+      },
+      {
+        "addr": "0x080E2594",
+        "size": 61974
+      },
+      {
+        "addr": "0x080D0F60",
+        "size": 69750
+      },
+      {
+        "addr": "0x080E2DFC",
+        "size": 61998
+      },
+      {
+        "addr": "0x080D07E0",
+        "size": 69622
+      },
+      {
+        "addr": "0x080E2FB0",
+        "size": 62010
+      },
+      {
+        "addr": "0x080D05FC",
+        "size": 69606
+      },
+      {
+        "addr": "0x080E2704",
+        "size": 61990
+      },
+      {
+        "addr": "0x080D0D3C",
+        "size": 69734
+      },
+      {
+        "addr": "0x080E28CC",
+        "size": 61982
+      },
+      {
+        "addr": "0x080D02A0",
+        "size": 69750
+      },
+      {
+        "addr": "0x080E2134",
+        "size": 62006
+      },
+      {
+        "addr": "0x080D0B20",
+        "size": 69622
+      },
+      {
+        "addr": "0x080E2B18",
+        "size": 61970
+      },
+      {
+        "addr": "0x080D013C",
+        "size": 69814
+      },
+      {
+        "addr": "0x080E2D14",
+        "size": 61974
+      },
+      {
+        "addr": "0x080D06E0",
+        "size": 69830
+      },
+      {
+        "addr": "0x080E251C",
+        "size": 61966
+      },
+      {
+        "addr": "0x080D0EE0",
+        "size": 69702
+      },
+      {
+        "addr": "0x080E2C3C",
+        "size": 61934
+      },
+      {
+        "addr": "0x080D05E0",
+        "size": 69682
+      },
+      {
+        "addr": "0x080E237C",
+        "size": 61998
+      },
+      {
+        "addr": "0x080D09BC",
+        "size": 69686
+      }
+    ],
+    "keep_supported": true
+  },
+  "features": "FM,DMR,P25_EXPERIMENTAL_RX,PROJECT_DM1701_25_HOME,NO_FILTER_SCAN",
+  "toolchain": "14.2.1",
+  "studio": {
+    "hardware_tested": false,
+    "p25_rf_rx_verified": false,
+    "p25_rf_tx": false
+  }
+}

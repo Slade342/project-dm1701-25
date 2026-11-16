@@ -1,0 +1,40 @@
+{
+  "compiler": "clang version 22.1.8",
+  "target": "Cortex-M4 / Thumb, freestanding",
+  "objects": [
+    {
+      "source": "vendor/open25/p25.c",
+      "object": "build/arm/p25.o",
+      "bytes": 23488,
+      "sha256": "38da65625a7cdbd60dc971310c59407ee224217518703758eb79961c7c3aeb14",
+      "machine": "ARM",
+      "linked": false
+    },
+    {
+      "source": "src/dm1701_rx_probe.c",
+      "object": "build/arm/probe-disabled.o",
+      "bytes": 2904,
+      "sha256": "d273c72e4b027e97f9566bbf712f0de28eb7136e37e2a3ebcf26a4ce28a4e5c2",
+      "machine": "ARM",
+      "linked": false
+    },
+    {
+      "source": "src/dm1701_rx_probe.c",
+      "object": "build/arm/probe-experimental.o",
+      "bytes": 3632,
+      "sha256": "f6480517b73a8d68f2a3298f00afdd65d718f8705cd40fee036c20c86c751ecf",
+      "machine": "ARM",
+      "linked": false
+    },
+    {
+      "source": "src/radiofoundry_bridge.c",
+      "object": "build/arm/radiofoundry-bridge.o",
+      "bytes": 2888,
+      "sha256": "2229ba262ea9d4e36659e19f1e945ed6a6f115d001fccd3f7097fbee1414075b",
+      "machine": "ARM",
+      "linked": false
+    }
+  ],
+  "radio_qualified": false,
+  "firmware_image_generated": false
+}

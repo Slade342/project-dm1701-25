@@ -1,0 +1,5 @@
+#ifndef DM1701_ARM_CSTDIO
+#define DM1701_ARM_CSTDIO
+typedef struct dm1701_arm_file FILE;
+extern "C" int printf(const char *, ...);
+#endif

@@ -1,0 +1,8 @@
+WINDOWS P25 SPEECH TEST UPDATE
+
+Extract this ZIP, then copy its DM1701-Studio folder contents into your existing DM1701-Studio folder, replacing files.
+Double-click Test-P25-Speech.cmd. Python must already be installed. No USB connection or firmware flashing is needed.
+Expected: a 5.22-second spoken test plays on your PC. WAV and JSON report: firmware-p25/voice/results.
+The Windows x64 decoder was cross-compiled; the equivalent Linux decoder passed the fixture test. Windows execution still needs your test.
+This does not enable P25 audio on the radio. Raw SAVE.jsonl captures are not yet demodulated P25 voice bits.
+For receive-path diagnostics use the CPS P25 lab receive test. Read P25-RECEIVE-TESTS.md for RX-only frequencies.

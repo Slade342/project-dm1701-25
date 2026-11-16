@@ -1,0 +1,27 @@
+DM-1701 CAPTURE LAB / experimental, not hardware-tested
+This is a raw-data experiment, not working P25 voice firmware.
+It replaces OpenGD77 with a RadioFoundry-based lab build.
+Keep a full flash/calibration backup and a working restore route first.
+Read firmware-lab/README.md before proceeding. The stock source is used for the codec/key;
+the installer flashes the capture-lab image, not that stock firmware.
+image    DM1701-CAPTURE-LAB.bin: Baofeng DM-1701 capture-lab-0.1 (git 947c1398), 535924 bytes, SHA-256 verified against DM1701-CAPTURE-LAB.json
+codec    MERGE: asked for: the codec is written from your stock file
+key      deriving the Baofeng DM-1701 bootloader key from the stock file
+stock    DM-1701(CSV)-V02.06.bin verified (SHA-256), codec windows decrypted and checked
+
+plan:
+  board Baofeng DM-1701, codec mode: merge
+    sector  3  0x0800C000..0x0800FFFF    16 KB  ERASE + WRITE app: blocks 2..17 (16 x 1024 bytes, up to 0x0800FFFF)
+    sector  4  0x08010000..0x0801FFFF    64 KB  ERASE + WRITE app: blocks 2..65 (64 x 1024 bytes, up to 0x0801FFFF)
+    sector  5  0x08020000..0x0803FFFF   128 KB  ERASE + WRITE app: blocks 2..129 (128 x 1024 bytes, up to 0x0803FFFF)
+    sector  6  0x08040000..0x0805FFFF   128 KB  ERASE + WRITE app: blocks 2..129 (128 x 1024 bytes, up to 0x0805FFFF)
+    sector  7  0x08060000..0x0807FFFF   128 KB  ERASE + WRITE app: blocks 2..129 (128 x 1024 bytes, up to 0x0807FFFF)
+    sector  8  0x08080000..0x0809FFFF   128 KB  ERASE + WRITE app: blocks 2..61 (60 x 1024 bytes, up to 0x0808EFFF)
+    sector  9  0x080A0000..0x080BFFFF   128 KB  not touched (free)
+    sector 10  0x080C0000..0x080DFFFF   128 KB  ERASE + WRITE codec: blocks 2..129 (128 x 1024 bytes, up to 0x080DFFFF)
+    sector 11  0x080E0000..0x080FFFFF   128 KB  ERASE + WRITE codec: blocks 2..129 (128 x 1024 bytes, up to 0x080FFFFF)
+  erase 8 sector(s): 3, 4, 5, 6, 7, 8, 10, 11
+  write 780 blocks (798720 bytes)
+  never erased or written: the bootloader 0x08000000..0x0800BFFF
+
+dry run: nothing was erased or written

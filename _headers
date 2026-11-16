@@ -1,0 +1,23 @@
+/downloads/Project-DM1701-25-Setup-0.4-Web.exe
+  Content-Type: application/octet-stream
+  Content-Disposition: attachment; filename="Project-DM1701-25-Setup-0.4-Web.exe"
+  X-Content-Type-Options: nosniff
+  Cache-Control: no-store
+/downloads/Project-DM1701-25-Setup-0.4-Web.zip
+  Content-Type: application/zip
+  Content-Disposition: attachment; filename="Project-DM1701-25-Setup-0.4-Web.zip"
+  X-Content-Type-Options: nosniff
+  Cache-Control: no-store
+/downloads/Project-DM1701-25-P25-EXPERIMENTAL.bin
+  Content-Type: application/octet-stream
+  Content-Disposition: attachment; filename="Project-DM1701-25-P25-EXPERIMENTAL.bin"
+  X-Content-Type-Options: nosniff
+  Cache-Control: no-store
+/downloads/Project-DM1701-25-macOS.zip
+  Content-Type: application/zip
+  Content-Disposition: attachment; filename="Project-DM1701-25-macOS.zip"
+  X-Content-Type-Options: nosniff
+  Cache-Control: no-store
+/downloads/*
+  X-Content-Type-Options: nosniff
+  Cache-Control: no-store

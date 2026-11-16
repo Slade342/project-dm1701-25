@@ -1,0 +1,50 @@
+# Receive-only examples, not a local repeater list.
+# Set your assigned DMR radio ID in the app before compiling DMR channels.
+version: 0.12.0
+settings:
+  introLine1: DM-1701
+  introLine2: Studio
+  power: Low
+  squelch: 3
+radioIDs: []
+contacts:
+- dmr:
+    id: tg9
+    name: Local TG9
+    type: GroupCall
+    number: 9
+    ring: false
+groupLists:
+- id: gl9
+  name: Local receive
+  contacts: [tg9]
+channels:
+- fm:
+    id: ch1
+    name: FM receive demo
+    rxFrequency: 145.500 MHz
+    txFrequency: 145.500 MHz
+    rxOnly: true
+    power: Low
+    admit: Always
+    bandwidth: Narrow
+- dmr:
+    id: ch2
+    name: DMR receive demo
+    rxFrequency: 433.450 MHz
+    txFrequency: 433.450 MHz
+    rxOnly: true
+    power: Low
+    admit: Always
+    colorCode: 1
+    timeSlot: TS1
+    contact: tg9
+    groupList: gl9
+zones:
+- id: zone1
+  name: Channels
+  A:
+  - ch1
+  - ch2
+  B: []
+scanLists: []

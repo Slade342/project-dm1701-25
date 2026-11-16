@@ -1,0 +1,6 @@
+#ifndef DM1701_ARM_CSTRING
+#define DM1701_ARM_CSTRING
+typedef unsigned int size_t;
+extern "C" void *memset(void *, int, size_t);
+extern "C" void *memcpy(void *, const void *, size_t);
+#endif
