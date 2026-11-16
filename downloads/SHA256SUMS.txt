@@ -2,6 +2,7 @@
 520d1a072b707d7891204a54e90e54ce5f486e16e0b4a9b923def05c11fc88af  downloads/Project-DM1701-25-Setup-0.4.1-Web.exe
 e85c00e17d28243638dc52b9c22b6e7f14fdf1a565fef3df7bb6312cd8460889  downloads/Project-DM1701-25-Setup-0.4.1.exe
 55ab211db75849c08c9cc65c8b590d82fdbca36d5fb9181be021f66d50696dce  downloads/Project-DM1701-25-Setup-0.4.2.exe
+544feb4da6e12195a16322174444a6ce841bcf1cf37c129ac5a4ed627cd1a900  downloads/Project-DM1701-25-Setup-0.4.3.exe
 6712e2f4f79a3f2493ce5ef8e5a212a43a9210ff5d0e0821fd3018491418581c  downloads/Project-DM1701-25-Setup-0.4.exe
 0d408b6928790d678be5e9246b3ff6ece7cedd6c8022bfcd10a8b7896bceac82  downloads/Project-DM1701-25-Setup-0.4-Web.zip
 6ce4c97ea84d4a010c8f0b83b965d1453165d98ff2c7f1d95b46ab3566e91e70  downloads/Project-DM1701-25-Source-0.4.zip
