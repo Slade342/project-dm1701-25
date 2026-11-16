@@ -1,4 +1,4 @@
-5f5ab6c91c6c2c29bca2c889aebeccdd37ae9caccd86e560acb6ec1cfc0349da  downloads/Project-DM1701-25-Setup-0.4.exe
-e24a63a30a8b3a74bafdb070f2714fd17bdfee0c6f4405f9319d5ce84bff26ea  downloads/Project-DM1701-25-Setup-0.4-Web.exe
+6712e2f4f79a3f2493ce5ef8e5a212a43a9210ff5d0e0821fd3018491418581c  downloads/Project-DM1701-25-Setup-0.4.exe
+26004bae5258048b6d9899189c93e746fd9ebbc671297f1b95a2d6bb452b1a84  downloads/Project-DM1701-25-Setup-0.4-Web.exe
 085e48d6b7fff0deac84a73369c5420e3d811dc4ab9c7cc775721275e987e0d7  downloads/Project-DM1701-25-macOS.zip
 b9785f4dedee64be1af547cad0598118884ab5eddc32c059a221fe28e29614d0  downloads/PROJECT-DM1701-25-P25-EXPERIMENTAL.bin
