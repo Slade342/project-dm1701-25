@@ -9,3 +9,4 @@ e85c00e17d28243638dc52b9c22b6e7f14fdf1a565fef3df7bb6312cd8460889  downloads/Proj
 085e48d6b7fff0deac84a73369c5420e3d811dc4ab9c7cc775721275e987e0d7  downloads/Project-DM1701-25-macOS.zip
 b9785f4dedee64be1af547cad0598118884ab5eddc32c059a221fe28e29614d0  downloads/PROJECT-DM1701-25-P25-EXPERIMENTAL.bin
 0024013a2f834343ee59b03fa87ca52fc4fce12312db7a147f58f75c8104c99b  downloads/Project-DM1701-25-Firmware-Source-0.4.tar.xz
+e5dcc136c9184b8205523de3b8f3a98db7f62407010530266c1db70b0f6c28e1  downloads/RadioFoundry-DM32-Experimental.bin
